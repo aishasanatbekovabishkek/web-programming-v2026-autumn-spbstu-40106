@@ -84,7 +84,7 @@ button {
   margin-top: 5px;
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   [data-testid='entity-form'],
   [data-testid='entity-card'] form {
     flex-direction: column;
