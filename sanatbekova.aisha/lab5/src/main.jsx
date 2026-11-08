@@ -1,36 +1,36 @@
-import React, { useState } from "react";
-import { createRoot } from "react-dom/client";
-import "./styles.css";
-import princeCover from "../assets/prince.jpg";
-import prideCover from "../assets/pride.jpg";
-import sherlockCover from "../assets/sherlock.jpg";
+import React, {useState} from 'react';
+import {createRoot} from 'react-dom/client';
+import './styles.css';
+import princeCover from '../assets/prince.jpg';
+import prideCover from '../assets/pride.jpg';
+import sherlockCover from '../assets/sherlock.jpg';
 
 const books = [
   {
     id: 1,
-    title: "Маленький принц",
-    author: "Антуан де Сент-Экзюпери",
+    title: 'Маленький принц',
+    author: 'Антуан де Сент-Экзюпери',
     rating: 4.9,
     description:
-      "История о маленьком путешественнике, дружбе, любви и важных жизненных ценностях.",
+      'История о маленьком путешественнике, дружбе, любви и важных жизненных ценностях.',
     cover: princeCover,
   },
   {
     id: 2,
-    title: "Гордость и предубеждение",
-    author: "Джейн Остин",
+    title: 'Гордость и предубеждение',
+    author: 'Джейн Остин',
     rating: 4.8,
     description:
-      "Роман о любви, семейных отношениях и преодолении предрассудков.",
+      'Роман о любви, семейных отношениях и преодолении предрассудков.',
     cover: prideCover,
   },
   {
     id: 3,
-    title: "Приключения Шерлока Холмса",
-    author: "Артур Конан Дойл",
+    title: 'Приключения Шерлока Холмса',
+    author: 'Артур Конан Дойл',
     rating: 4.7,
     description:
-      "Сборник детективных историй о знаменитом сыщике и его расследованиях.",
+      'Сборник детективных историй о знаменитом сыщике и его расследованиях.',
     cover: sherlockCover,
   },
 ];
@@ -80,11 +80,7 @@ function App() {
             {currentSlide + 1} / {books.length}
           </span>
 
-          <button
-            type="button"
-            data-testid="slide-next"
-            onClick={nextSlide}
-          >
+          <button type="button" data-testid="slide-next" onClick={nextSlide}>
             Далее
           </button>
         </div>
@@ -95,9 +91,9 @@ function App() {
               key={item.id}
               type="button"
               data-testid="slide-page"
-              className={index === currentSlide ? "active" : ""}
+              className={index === currentSlide ? 'active' : ''}
               aria-label={`Перейти к слайду ${index + 1}`}
-              aria-current={index === currentSlide ? "true" : undefined}
+              aria-current={index === currentSlide ? 'true' : undefined}
               onClick={() => setCurrentSlide(index)}
             >
               {index + 1}

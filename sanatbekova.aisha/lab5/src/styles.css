@@ -35,7 +35,7 @@ body {
   padding: 30px;
   background-color: white;
   border-radius: 16px;
-  box-shadow: 0 8px 25px rgb(0 0 0 / 8%);
+  box-shadow: 0 8px 25px rgb(0 0 0 / 0.08);
 }
 
 .book-card {
@@ -50,7 +50,7 @@ body {
   height: 330px;
   object-fit: cover;
   border-radius: 8px;
-  box-shadow: 0 5px 15px rgb(0 0 0 / 15%);
+  box-shadow: 0 5px 15px rgb(0 0 0 / 0.15);
 }
 
 .book-info {
@@ -97,11 +97,7 @@ body {
   cursor: pointer;
 }
 
-.slider-controls button:hover {
-  background-color: #4b3628;
-}
-
-[data-testid="slide-indicator"] {
+[data-testid='slide-indicator'] {
   font-size: 18px;
   font-weight: bold;
 }
@@ -128,9 +124,13 @@ body {
   background-color: #eee5dc;
 }
 
-.pagination button.active {
+.pagination .active {
   background-color: #6b4f3b;
   color: white;
+}
+
+.slider-controls button:hover {
+  background-color: #4b3628;
 }
 
 @media (width <= 600px) {
