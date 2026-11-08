@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { createRoot } from "react-dom/client";
 import "./styles.css";
+import princeCover from "../assets/prince.jpg";
+import prideCover from "../assets/pride.jpg";
+import sherlockCover from "../assets/sherlock.jpg";
 
 const books = [
   {
@@ -10,7 +13,7 @@ const books = [
     rating: 4.9,
     description:
       "История о маленьком путешественнике, дружбе, любви и важных жизненных ценностях.",
-    cover: "/assets/prince.jpg",
+    cover: princeCover,
   },
   {
     id: 2,
@@ -19,7 +22,7 @@ const books = [
     rating: 4.8,
     description:
       "Роман о любви, семейных отношениях и преодолении предрассудков.",
-    cover: "/assets/pride.jpg",
+    cover: prideCover,
   },
   {
     id: 3,
@@ -28,7 +31,7 @@ const books = [
     rating: 4.7,
     description:
       "Сборник детективных историй о знаменитом сыщике и его расследованиях.",
-    cover: "/assets/sherlock.jpg",
+    cover: sherlockCover,
   },
 ];
 
