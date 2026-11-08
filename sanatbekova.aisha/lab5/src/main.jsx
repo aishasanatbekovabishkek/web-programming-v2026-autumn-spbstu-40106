@@ -11,6 +11,7 @@ const books = [
     title: 'Маленький принц',
     author: 'Антуан де Сент-Экзюпери',
     rating: 4.9,
+    price: 450,
     description:
       'История о маленьком путешественнике, дружбе, любви и важных жизненных ценностях.',
     cover: princeCover,
@@ -20,6 +21,7 @@ const books = [
     title: 'Гордость и предубеждение',
     author: 'Джейн Остин',
     rating: 4.8,
+    price: 560,
     description:
       'Роман о любви, семейных отношениях и преодолении предрассудков.',
     cover: prideCover,
@@ -29,6 +31,7 @@ const books = [
     title: 'Приключения Шерлока Холмса',
     author: 'Артур Конан Дойл',
     rating: 4.7,
+    price: 700,
     description:
       'Сборник детективных историй о знаменитом сыщике и его расследованиях.',
     cover: sherlockCover,
@@ -63,6 +66,7 @@ function App() {
             <h2>{book.title}</h2>
             <p className="author">{book.author}</p>
             <p className="rating">★ {book.rating} / 5</p>
+            <p className="price">{book.price} ₽</p>
             <p className="description">{book.description}</p>
           </div>
         </article>

@@ -73,6 +73,13 @@ body {
   font-weight: bold;
 }
 
+.price {
+  margin-top: 15px;
+  color: #6b4f3b;
+  font-size: 24px;
+  font-weight: bold;
+}
+
 .description {
   margin-top: 25px;
   font-size: 17px;
